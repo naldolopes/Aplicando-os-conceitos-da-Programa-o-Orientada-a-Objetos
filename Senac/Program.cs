@@ -35,6 +35,11 @@ class Program
         double totalAmountMoto = motorcycle.CalculateTotalAmount(numDays);
 
         // Print the total amount for the car and motorcycle rental
+        Console.WriteLine("Rental amount for the car and motorcycle");
+        Console.WriteLine("=======================================");
+        Console.WriteLine($"Number of days: {numDays}");
+        Console.WriteLine($"Car daily rate: $ {carDailyRate}", CultureInfo.InvariantCulture);
+        Console.WriteLine($"Motorcycle daily rate: $ {motorcycleDailyRate}", CultureInfo.InvariantCulture); 
         Console.WriteLine($"Total rental amount for the car for {numDays} days: $ {totalAmountCar}", CultureInfo.InvariantCulture);
         Console.WriteLine($"Total rental amount for the motorcycle for {numDays} days: $ {totalAmountMoto}", CultureInfo.InvariantCulture);
     }
